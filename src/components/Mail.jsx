@@ -2,7 +2,7 @@ import Input from "./Input";
 
 const Mail = () => {
   return (
-    <div className="flex gap-x-6 justify-center items-start w-full max-w-[1300px] py-[104px]">
+    <div id="contact" className="flex gap-x-6 justify-center items-start w-full max-w-[1300px] py-[104px]">
       <div className="flex w-full justify-between items-center">
         <h1 className="leading-10 text-[32px] w-[528px]">
           Давайте создадим что-то прекрасное вместе!

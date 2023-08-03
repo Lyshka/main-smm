@@ -17,9 +17,6 @@ const Header = () => {
               <a href="https://smm-ibis.by/">Главная</a>
             </span>
             <span className="hover:text-[#FF3A2D] cursor-pointer header">
-              <a href="https://smm-ibis.by/#onas">О нас</a>
-            </span>
-            <span className="hover:text-[#FF3A2D] cursor-pointer header">
               <a href="https://smm-ibis.by/#portf">Портфолио</a>
             </span>
             <span className="hover:text-[#FF3A2D] cursor-pointer header">

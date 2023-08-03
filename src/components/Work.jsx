@@ -49,7 +49,7 @@ const Work = () => {
   }, [chooseCategory]);
 
   return (
-    <div className="flex flex-col gap-y-10 w-full max-w-[1300px] py-[104px]">
+    <div id="portf" className="flex flex-col gap-y-10 w-full max-w-[1300px] py-[104px]">
       <div className="flex w-full justify-between items-center">
         <h1 className="leading-10 text-[32px]">Проекты</h1>
         <div className="">
