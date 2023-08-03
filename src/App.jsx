@@ -1,24 +1,18 @@
 import { Toaster } from "react-hot-toast";
 import {
-  AboutMobile,
-  AddressMobile,
-  EdgesMobile,
   Footer,
   FooterMobile,
   Header,
   HeaderMobile,
   Mail,
-  MailMobile,
   News,
-  Price,
   Quote,
   Slider,
   Title,
-  TitleMobile,
   Work,
-  WorkMobile,
+  Price,
+  SliderMobile
 } from "./components";
-import { PriceMobile } from "./components/Mobile/PriceMobile";
 
 const App = () => {
   return (
@@ -43,13 +37,7 @@ const App = () => {
 
       <div className="md:hidden block">
         <HeaderMobile />
-        <TitleMobile />
-        <AboutMobile />
-        <EdgesMobile />
-        <WorkMobile />
-        <PriceMobile />
-        <MailMobile />
-        <AddressMobile />
+        <SliderMobile />
         <FooterMobile />
       </div>
     </>

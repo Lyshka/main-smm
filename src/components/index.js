@@ -11,10 +11,5 @@ export {default as Mail} from "./Mail"
 
 
 export {default as HeaderMobile} from "./Mobile/HeaderMobile"
-export {default as TitleMobile} from "./Mobile/TitleMobile"
-export {default as AboutMobile} from "./Mobile/AboutMobile"
-export {default as EdgesMobile} from "./Mobile/EdgesMobile"
-export {default as WorkMobile} from "./Mobile/WorkMobile"
-export {default as MailMobile} from "./Mobile/MailMobile"
-export {default as AddressMobile} from "./Mobile/AddressMobile"
+export {default as SliderMobile} from "./Mobile/SliderMobile"
 export {default as FooterMobile} from "./Mobile/FooterMobile"
