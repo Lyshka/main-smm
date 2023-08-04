@@ -44,8 +44,6 @@ const News = () => {
     getNews();
   }, []);
 
-  console.log(dots)
-
   return (
     <div className="flex flex-col gap-y-10 w-full max-w-[1300px] py-[104px]">
       <div className="flex w-full justify-between items-center">
@@ -140,6 +138,7 @@ const News = () => {
         <div className="flex justify-end -mt-5 items-center gap-x-2">
           {newsLisst.map((_, idx) => (
             <div
+            key={idx}
               onClick={() => handleDots(idx)}
               className={`cursor-pointer transition-all duration-500 h-2 rounded-[7px] ${
                 dots === idx ? "bg-black w-4" : "bg-[#A7A7A7] w-2"

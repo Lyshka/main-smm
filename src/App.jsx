@@ -14,7 +14,9 @@ import {
   SliderMobile,
   TitleMobile,
   WorkMobile,
-  PriceMobile
+  PriceMobile,
+  QuoteMobile,
+  NewsMobile
 } from "./components";
 
 const App = () => {
@@ -44,6 +46,8 @@ const App = () => {
         <TitleMobile />
         <WorkMobile />
         <PriceMobile />
+        <QuoteMobile />
+        <NewsMobile />
         <FooterMobile />
       </div>
     </>
