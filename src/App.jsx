@@ -11,7 +11,10 @@ import {
   Title,
   Work,
   Price,
-  SliderMobile
+  SliderMobile,
+  TitleMobile,
+  WorkMobile,
+  PriceMobile
 } from "./components";
 
 const App = () => {
@@ -38,6 +41,9 @@ const App = () => {
       <div className="md:hidden block">
         <HeaderMobile />
         <SliderMobile />
+        <TitleMobile />
+        <WorkMobile />
+        <PriceMobile />
         <FooterMobile />
       </div>
     </>
