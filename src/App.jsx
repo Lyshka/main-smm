@@ -16,7 +16,8 @@ import {
   WorkMobile,
   PriceMobile,
   QuoteMobile,
-  NewsMobile
+  NewsMobile,
+  MailMobile
 } from "./components";
 
 const App = () => {
@@ -48,6 +49,7 @@ const App = () => {
         <PriceMobile />
         <QuoteMobile />
         <NewsMobile />
+        <MailMobile />
         <FooterMobile />
       </div>
     </>

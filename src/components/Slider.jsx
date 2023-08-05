@@ -1,29 +1,45 @@
-import { Carousel, IconButton } from "@material-tailwind/react";
+import { Carousel } from "@material-tailwind/react";
+import { useEffect } from "react";
 
 const Slider = () => {
   let a = null;
   let b = null;
+  let c = null;
+  let d = null;
+  let e = null;
 
+  useEffect(() => {
+    if (e - 1 === d) {
+      c(0);
+    }
+  }, [d]);
+  
   return (
     <Carousel
       className="mt-24"
       autoplay
       autoplayDelay={10000}
-      navigation={({ setActiveIndex, activeIndex, length }) => (
-        <div className="absolute bottom-14 left-2/4 z-[999] flex -translate-x-2/4 gap-2">
-          {new Array(length).fill("").map((_, i) => (
-            <div
-              key={i}
-              onClick={() => setActiveIndex(i)}
-              className={`rounded-full select-none cursor-pointer ${
-                activeIndex === i ? "bg-white" : "bg-[#bfbfbf]"
-              } bg-[#E5E5E5] w-4 h-4`}
-            >
-              &nbsp;
-            </div>
-          ))}
-        </div>
-      )}
+      navigation={({ setActiveIndex, activeIndex, length }) => {
+        c = setActiveIndex
+        d = activeIndex
+        e = length
+
+        return (
+          <div className="absolute bottom-14 left-2/4 z-[999] flex -translate-x-2/4 gap-2">
+            {new Array(length).fill("").map((_, i) => (
+              <div
+                key={i}
+                onClick={() => setActiveIndex(i)}
+                className={`rounded-full select-none cursor-pointer ${
+                  activeIndex === i ? "bg-white" : "bg-[#bfbfbf]"
+                } bg-[#E5E5E5] w-4 h-4`}
+              >
+                &nbsp;
+              </div>
+            ))}
+          </div>
+        );
+      }}
       prevArrow={({ handlePrev }) => {
         a = handlePrev;
       }}

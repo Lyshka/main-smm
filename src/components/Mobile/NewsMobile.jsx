@@ -83,15 +83,15 @@ const NewsMobile = () => {
         </div>
       </div>
 
-      {newsLength === 2 ? (
+      {newsLength === 1 ? (
         ""
       ) : (
-        <div className="flex justify-center items-center gap-x-2">
+        <div className="flex select-none justify-center items-center gap-x-2">
           {newsLisst.map((_, idx) => (
             <div
               key={idx}
               onClick={() => handleDots(idx)}
-              className={`cursor-pointer transition-all duration-500 h-2 rounded-[7px] ${
+              className={`cursor-pointer select-none transition-all duration-500 h-2 rounded-[7px] ${
                 dots === idx ? "bg-black w-4" : "bg-[#A7A7A7] w-2"
               }`}
             >

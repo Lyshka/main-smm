@@ -1,29 +1,45 @@
-import { Carousel, IconButton } from "@material-tailwind/react";
+import { Carousel } from "@material-tailwind/react";
+import { useEffect } from "react";
 
 const SliderMobile = () => {
   let a = null;
   let b = null;
+  let c = null;
+  let d = null;
+  let e = null;
+
+  useEffect(() => {
+    if (e - 1 === d) {
+      c(0);
+    }
+  }, [d]);
 
   return (
     <Carousel
-      className="overflow-hidden"
-      //   autoplay
-      //   autoplayDelay={10000}
-      navigation={({ setActiveIndex, activeIndex, length }) => (
-        <div className="absolute bottom-14 left-2/4 z-[999] flex -translate-x-2/4 gap-2">
-          {new Array(length).fill("").map((_, i) => (
-            <div
-              key={i}
-              onClick={() => setActiveIndex(i)}
-              className={`rounded-full select-none cursor-pointer ${
-                activeIndex === i ? "bg-white" : "bg-[#bfbfbf]"
-              } bg-[#E5E5E5] w-4 h-4`}
-            >
-              &nbsp;
-            </div>
-          ))}
-        </div>
-      )}
+      className="overflow-hidden h-screen"
+      autoplay
+      autoplayDelay={10000}
+      navigation={({ setActiveIndex, activeIndex, length }) => {
+        c = setActiveIndex;
+        d = activeIndex;
+        e = length;
+
+        return (
+          <div className="absolute bottom-32 left-2/4 z-[999] flex -translate-x-2/4 gap-2">
+            {new Array(length).fill("").map((_, i) => (
+              <div
+                key={i}
+                onClick={() => setActiveIndex(i)}
+                className={`rounded-full select-none cursor-pointer ${
+                  activeIndex === i ? "bg-white" : "bg-[#bfbfbf]"
+                } bg-[#E5E5E5] w-4 h-4`}
+              >
+                &nbsp;
+              </div>
+            ))}
+          </div>
+        );
+      }}
       prevArrow={({ handlePrev }) => {
         a = handlePrev;
       }}
@@ -31,7 +47,7 @@ const SliderMobile = () => {
         b = handleNext;
       }}
     >
-      <div className="relative min-w-max h-[calc(100vh-96px)] duration-500 text-black flex justify-center items-center">
+      <div className="relative w-screen h-[calc(100vh-90px)] duration-500 text-black flex justify-center items-center">
         <img
           src="https://smm-ibis.by/wp-content/uploads/2023/04/1-Mobile.webp"
           className="w-screen h-full relative"
@@ -105,7 +121,7 @@ const SliderMobile = () => {
           </div>
         </div>
       </div>
-      <div className="relative min-w-max h-[calc(100vh-96px)] duration-500 text-black flex justify-center items-center">
+      <div className="relative w-screen h-[calc(100vh-90px)] duration-500 text-black flex justify-center items-center">
         <img
           src="https://smm-ibis.by/wp-content/uploads/2023/04/2-Mobile.webp"
           className="w-screen h-full relative"
@@ -179,7 +195,7 @@ const SliderMobile = () => {
           </div>
         </div>
       </div>
-      <div className="relative min-w-max h-[calc(100vh-96px)] duration-500 text-black flex justify-center items-center">
+      <div className="relative w-screen h-[calc(100vh-90px)] duration-500 text-black flex justify-center items-center">
         <img
           src="https://smm-ibis.by/wp-content/uploads/2023/04/3-Mobile.webp"
           className="w-screen h-full relative"
