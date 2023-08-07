@@ -70,7 +70,7 @@ const SliderMobile = () => {
               </button>
             </a>
 
-            <a className="w-full" href="#contact">
+            <a className="w-full" href="#contactMobile">
               <button className="px-4 py-2 text-white w-full bg-[#FF3A2D] rounded-[100px] text-xs leading-6 uppercase">
                 Начать продвижение
               </button>
@@ -144,7 +144,7 @@ const SliderMobile = () => {
               </button>
             </a>
 
-            <a className="w-full" href="#contact">
+            <a className="w-full" href="#contactMobile">
               <button className="px-4 py-2 text-white w-full bg-[#FF3A2D] rounded-[100px] text-xs leading-6 uppercase">
                 Начать продвижение
               </button>
@@ -218,7 +218,7 @@ const SliderMobile = () => {
               </button>
             </a>
 
-            <a className="w-full" href="#contact">
+            <a className="w-full" href="#contactMobile">
               <button className="px-4 py-2 text-white w-full bg-[#FF3A2D] rounded-[100px] text-xs leading-6 uppercase">
                 Начать продвижение
               </button>

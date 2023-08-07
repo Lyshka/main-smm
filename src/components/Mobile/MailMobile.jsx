@@ -3,7 +3,7 @@ import InputMobile from "./InputMobile";
 const MailMobile = () => {
   return (
     <div
-      id="contact"
+      id="contactMobile"
       className="flex flex-col gap-y-6 justify-center items-center w-full py-6 px-4"
     >
       <div className="flex w-full justify-center items-center">
