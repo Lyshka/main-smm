@@ -1,6 +1,34 @@
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { Toaster, toast } from "react-hot-toast";
+
 import InputMobile from "./InputMobile";
 
 const MailMobile = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_qyeuhmr",
+        "template_luykcfl",
+        form.current,
+        "dcOlQT0d4xOkMtoc_"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success("Ваше сообщение успешно отправлено");
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div
       id="contactMobile"
@@ -12,16 +40,24 @@ const MailMobile = () => {
         </h1>
       </div>
 
-      <form className="flex flex-col w-full gap-y-4 justify-center items-center">
-        <InputMobile text={"Имя"} />
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        className="flex flex-col w-full gap-y-4 justify-center items-center"
+      >
+        <InputMobile name="name" text={"Имя"} />
 
-        <InputMobile text={"Телефон"} type={"tel"} />
+        <InputMobile name="tel" text={"Телефон"} type={"tel"} />
 
-        <InputMobile text={"Email"} type={"email"} />
+        <InputMobile name="email" text={"Email"} type={"email"} />
+        <button
+          type="submit"
+          className="bg-[#FF3A2D] rounded-[100px] shadowMailButton text-white leading-6 text-xs px-4 py-2 w-full text-center uppercase"
+        >
+          Отправить
+        </button>
       </form>
-      <button className="bg-[#FF3A2D] rounded-[100px] shadowMailButton text-white leading-6 text-xs px-4 py-2 w-full text-center uppercase">
-        Отправить
-      </button>
+      <Toaster position="top-center" reverseOrder={false} />
     </div>
   );
 };

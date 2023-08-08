@@ -29,8 +29,6 @@ const Mail = () => {
       );
   };
 
-  console.log(form?.current)
-
   return (
     <div
       id="contact"
