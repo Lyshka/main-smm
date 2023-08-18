@@ -17,7 +17,9 @@ import {
   PriceMobile,
   QuoteMobile,
   NewsMobile,
-  MailMobile
+  MailMobile,
+  Agent,
+  AgentMobile,
 } from "./components";
 
 const App = () => {
@@ -28,6 +30,7 @@ const App = () => {
           <Header />
           <Slider />
           <Title />
+          <Agent />
           <Work />
           <Price />
           <Quote />
@@ -37,14 +40,15 @@ const App = () => {
 
         <div className="relative z-[9999] bg-white">
           <Footer />
-          <Toaster />
         </div>
+        <Toaster />
       </div>
 
       <div className="md:hidden block">
         <HeaderMobile />
         <SliderMobile />
         <TitleMobile />
+        <AgentMobile />
         <WorkMobile />
         <PriceMobile />
         <QuoteMobile />

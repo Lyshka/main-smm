@@ -8,6 +8,7 @@ export {default as Price} from "./Price"
 export {default as Quote} from "./Quote"
 export {default as News} from "./News"
 export {default as Mail} from "./Mail"
+export {default as Agent} from "./Agent"
 
 
 export {default as HeaderMobile} from "./Mobile/HeaderMobile"
@@ -19,3 +20,4 @@ export {default as PriceMobile} from "./Mobile/PriceMobile"
 export {default as QuoteMobile} from "./Mobile/QuoteMobile"
 export {default as NewsMobile} from "./Mobile/NewsMobile"
 export {default as MailMobile} from "./Mobile/MailMobile"
+export {default as AgentMobile} from "./Mobile/AgentMobile"

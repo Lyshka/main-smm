@@ -16,6 +16,9 @@ const Work = () => {
   const [works, setWorks] = useState([]);
   const [url, setUrl] = useState("");
 
+  const [worksLength, setWorksLength] = useState(6);
+  const [workFull, setWorkFull] = useState(false);
+
   const getWorks = async () => {
     const { data } = await axios.get(
       `https://smm-ibis.by//wp-json/wp/v2/portfolio?per_page=100${
@@ -44,12 +47,27 @@ const Work = () => {
     setChooseCategory(0);
   };
 
+  const maxWorks = () => {
+    setWorksLength(works.length);
+    setWorkFull(true);
+  };
+
+  const minWorks = () => {
+    setWorksLength(6);
+    setWorkFull(false);
+  };
+
   useEffect(() => {
     getWorks();
+    setWorksLength(6);
+    setWorkFull(false);
   }, [chooseCategory]);
 
   return (
-    <div id="portf" className="flex flex-col gap-y-10 w-full max-w-[1300px] py-[104px]">
+    <div
+      id="portf"
+      className="flex flex-col gap-y-10 w-full max-w-[1300px] py-[104px]"
+    >
       <div className="flex w-full justify-between items-center">
         <h1 className="leading-10 text-[32px]">Проекты</h1>
         <div className="">
@@ -80,7 +98,7 @@ const Work = () => {
         </div>
       </div>
       <div className="grid grid-cols-3 gap-6">
-        {works.map(({ yoast_head_json }, idx) => (
+        {works.slice(0, worksLength).map(({ yoast_head_json }, idx) => (
           <img
             key={idx}
             src={yoast_head_json.og_image[0].url}
@@ -92,6 +110,24 @@ const Work = () => {
             }}
           />
         ))}
+      </div>
+
+      <div className="w-full flex justify-center items-center">
+        {workFull ? (
+          <button
+            onClick={minWorks}
+            className="px-6 py-4 bg-[#FF3A2D] rounded-[100px] text-center leading-4 font-medium text-white"
+          >
+            Свернуть проекты
+          </button>
+        ) : (
+          <button
+            onClick={maxWorks}
+            className="px-6 py-4 bg-[#FF3A2D] rounded-[100px] text-center leading-4 font-medium text-white"
+          >
+            Смотреть все проекты
+          </button>
+        )}
       </div>
 
       <Modal refs={ref} setModal={setIsShow} modal={isShow} url={url} />
