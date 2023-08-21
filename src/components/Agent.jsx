@@ -23,10 +23,11 @@ const Agent = () => {
   };
 
   const handleRight = () => {
-    console.log(translate * Math.round(newsLength / 4));
+    console.log(-((Math.round(newsLength / 4) * trans) + trans))
+    console.log(translate * Math.round(newsLength / 4))
 
     if (
-      -(Math.round(newsLength / 4) * trans) ===
+      -((Math.round(newsLength / 4) * trans)) >
         translate * Math.round(newsLength / 4) ||
       newsLength === 2
     ) {
@@ -45,11 +46,11 @@ const Agent = () => {
       <h1 className="leading-10 text-[32px]">С кем мы сотрудничаем</h1>
       <div className="flex relative justify-start items-center gap-x-6">
         <div className="w-[1300px] flex relative justify-start items-center gap-x-6 overflow-hidden">
-          <div className="flex w-full justify-start px-1 items-center gap-x-6 py-2">
+          <div className="flex w-full justify-start px-3 items-center gap-x-6">
             {agents.map((el, idx) => (
               <div
                 key={idx}
-                className={`flex min-w-[305px] h-[176px] rounded-lg shadowPrice transition-all duration-500 flex-col justify-center items-center gap-y-4`}
+                className={`flex min-w-[305px] h-[176px] my-4 rounded-lg shadowPrice transition-all duration-500 flex-col justify-center items-center gap-y-4`}
                 style={{ translate: `${translate}px` }}
               >
                 <img
