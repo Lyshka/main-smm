@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="bg-[#171717] w-full h-[328px] relative z-[9999]">
+    <div className="bg-[#171717] w-full h-full relative z-[9999] py-2">
       <div className="container-[1300px] flex justify-center items-end">
         <div className="flex min-w-[1300px] justify-between items-center">
           <div className="py-12 flex flex-col gap-y-6">
@@ -19,9 +19,13 @@ const Footer = () => {
               <span>Таргет и контекстная реклама</span>
               <span>Дизайн | Создание контента</span>
             </div>
+
+            <div className="flex flex-col gap-y-2 text-[#BBBBBB] text-sm">
+              УНП 791294932
+            </div>
           </div>
 
-          <div className="flex flex-col gap-y-12">
+          <div className="flex flex-col gap-y-6">
             <div className="flex justify-center items-end flex-col gap-y-4">
               <span className="text-white font-medium">Социальные сети:</span>
 
@@ -119,6 +123,12 @@ const Footer = () => {
                   </div>
                 </a>
               </div>
+            </div>
+
+            <div className="flex flex-col gap-y-2 justify-end items-end text-[#BBBBBB] text-sm">
+              <a href="tel:+375222760452">+375 222 76 04 52</a>
+              <a href="tel:+375299157676">+375 29 915 76 76</a>
+              <a href="tel:+375298533872">+375 29 853 38 72</a>
             </div>
 
             <p className="text-sm text-[#BBBBBB]">
