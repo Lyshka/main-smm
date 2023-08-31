@@ -200,7 +200,7 @@ const HeaderMobile = () => {
             )}
 
             <li>
-              <a href="https://smm-ibis.by/48-best-wordpress-themes/">
+              <a href="https://smm-ibis.by/in-step-with-the-times/">
                 Новости
               </a>
             </li>
