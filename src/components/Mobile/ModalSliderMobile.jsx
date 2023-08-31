@@ -45,7 +45,7 @@ const ModalSliderMobile = ({ modal, handleModal }) => {
         <div className="w-full h-full flex justify-center items-center absolute bg-black/50 top-0">
           <div className="relative flex flex-col justify-center items-center rounded-lg bg-white">
             <img
-              src="https://smm-ibis.by/wp-content/uploads/2023/08/Frame-243.png"
+              src="https://smm-ibis.by/wp-content/uploads/2023/08/Frame-243.webp"
               alt="modalSlide"
               className="h-64 w-full"
             />

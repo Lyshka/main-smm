@@ -57,12 +57,12 @@ const Slider = () => {
       >
         <div className="relative min-w-max h-[calc(100vh-96px)] duration-500 text-black flex justify-start items-center">
           <img
-            src="https://smm-ibis.by/wp-content/uploads/2023/08/Баннер-1.png"
+            src="https://smm-ibis.by/wp-content/uploads/2023/08/Баннер-2.webp"
             className="w-screen h-full relative"
             alt=""
           />
 
-          <div className="absolute ml-[310px] p-10 rounded-2xl flex justify-start items-start flex-col gap-y-10 bg-black/[0.15] w-[749px]">
+          <div className="absolute ml-[310px] p-10 rounded-2xl flex justify-start items-start flex-col backdrop-blur gap-y-10 bg-black/[0.15] w-[749px]">
             <div>
               <span className="font-light text-white leading-8 text-xl uppercase">
                 Ибис маркетинг
@@ -130,12 +130,12 @@ const Slider = () => {
         </div>
         <div className="relative min-w-max h-[calc(100vh-96px)] duration-500 text-black flex justify-start items-center">
           <img
-            src="https://smm-ibis.by/wp-content/uploads/2023/08/Баннер-1-1.png"
+            src="https://smm-ibis.by/wp-content/uploads/2023/08/Баннер-1-1.webp"
             className="w-screen relative h-full"
             alt=""
           />
 
-          <div className="absolute ml-[310px] p-10 rounded-2xl flex justify-start items-start flex-col gap-y-10 bg-black/[0.15] w-[749px]">
+          <div className="absolute ml-[310px] p-10 rounded-2xl flex justify-start items-start flex-col backdrop-blur gap-y-10 bg-black/[0.15] w-[749px]">
             <div>
               <span className="font-light text-[#333333] leading-8 text-xl uppercase">
                 Ибис маркетинг
@@ -144,7 +144,7 @@ const Slider = () => {
                 Пора заставить Ваш бизнес расти!
               </h1>
             </div>
-            <p className="text-white leading-6 tracking-[1%] text-[#333333]">
+            <p className="leading-6 tracking-[1%] text-[#333333]">
               Таргетированная реклама + ведение социальных сетей всего за 450
               BYN
             </p>

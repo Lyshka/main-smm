@@ -58,21 +58,21 @@ const SliderMobile = () => {
       >
         <div className="relative w-screen h-[calc(100vh-90px)] duration-500 text-black flex justify-center items-center">
           <img
-            src="https://smm-ibis.by/wp-content/uploads/2023/08/Frame-331.png"
+            src="https://smm-ibis.by/wp-content/uploads/2023/08/Frame-331.webp"
             className="w-screen h-full relative"
             alt=""
           />
 
-          <div className="absolute p-6 rounded-2xl flex justify-start items-start flex-col gap-y-5 bg-black/20 w-[330px]">
+          <div className="absolute p-6 rounded-2xl flex justify-start items-start flex-col gap-y-5 backdrop-blur bg-black/20 w-[calc(100%-32px)]">
             <div className="w-60">
               <span className="font-light text-white leading-4 text-sm uppercase">
                 Ибис маркетинг
               </span>
-              <h1 className="leading-8 text-white text-lg">
+              <h1 className="leading-8 text-white text-[26px]">
                 Маркетинговый отдел на аутсорсе
               </h1>
             </div>
-            <p className="text-white leading-6 tracking-[1%] text-xs">
+            <p className="text-white leading-4 tracking-[1%] text-sm">
               Уже Kia, JAC и JETOUR выбрали нашу услугу для своего успеха на
               аутсорсе, всего за 1100 BYN. Начнем прямо сейчас?
             </p>
@@ -131,21 +131,21 @@ const SliderMobile = () => {
         </div>
         <div className="relative w-screen h-[calc(100vh-90px)] duration-500 text-black flex justify-center items-center">
           <img
-            src="https://smm-ibis.by/wp-content/uploads/2023/08/Frame-330.png"
+            src="https://smm-ibis.by/wp-content/uploads/2023/08/Frame-330.webp"
             className="w-screen h-full relative"
             alt=""
           />
 
-          <div className="absolute p-6 rounded-2xl flex justify-start items-start flex-col gap-y-5 bg-black/20 w-[330px]">
+          <div className="absolute p-6 rounded-2xl flex justify-start items-start flex-col gap-y-5 backdrop-blur bg-black/20 w-[calc(100%-32px)]">
             <div className="w-60">
               <span className="font-light text-white leading-4 text-sm uppercase">
                 Ибис маркетинг
               </span>
-              <h1 className="leading-8 text-lg text-white">
+              <h1 className="leading-8 text-[26px] text-white">
                 Пора заставить Ваш бизнес расти!
               </h1>
             </div>
-            <p className="text-white leading-6 tracking-[1%] text-xs">
+            <p className="text-white leading-4 tracking-[1%] text-sm">
               Таргетированная реклама + ведение социальных сетей всего за 450
               BYN
             </p>

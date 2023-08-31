@@ -13,7 +13,7 @@ const PriceMobile = () => {
     {
       title: "Создание продающих сайтов",
       desc: "Максимизируйте потенциал вашего бизнеса: создание продающего сайта, который превращает посетителей в лояльных клиентов",
-      img: "https://smm-ibis.by/wp-content/uploads/2023/07/content-7eca0a84.png",
+      img: "https://smm-ibis.by/wp-content/uploads/2023/08/content-7eca0a84-1.webp",
     },
     {
       title: "SEO  |   Контекстная реклама   |  Тех. поддержка сайта",

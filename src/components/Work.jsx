@@ -98,18 +98,22 @@ const Work = () => {
         </div>
       </div>
       <div className="grid grid-cols-3 gap-6">
-        {works.slice(0, worksLength).map(({ yoast_head_json }, idx) => (
-          <img
-            key={idx}
-            src={yoast_head_json.og_image[0].url}
-            alt="T1"
-            className="w-[417px] shadowWork h-[417px] hover:scale-105 cursor-pointer"
-            onClick={() => {
-              setIsShow((prv) => !prv);
-              setUrl(yoast_head_json.og_image[0].url);
-            }}
-          />
-        ))}
+        {works.slice(0, worksLength).map(({ yoast_head_json }, idx) => {
+          // console.log(yoast_head_json?.og_image[0].url)
+
+          return (
+            <img
+              key={idx}
+              src={yoast_head_json?.og_image[0].url}
+              alt="T1"
+              className="w-[417px] shadowWork h-[417px] hover:scale-105 cursor-pointer"
+              onClick={() => {
+                setIsShow((prv) => !prv);
+                setUrl(yoast_head_json.og_image[0].url);
+              }}
+            />
+          );
+        })}
       </div>
 
       <div className="w-full flex justify-center items-center">
