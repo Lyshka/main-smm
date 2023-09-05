@@ -58,7 +58,7 @@ const Slider = () => {
         <div className="relative min-w-max h-[calc(100vh-96px)] duration-500 text-black flex justify-start items-center">
           <img
             src="https://smm-ibis.by/wp-content/uploads/2023/08/Баннер-2.webp"
-            className="w-screen h-full relative"
+            className="w-screen h-full relative object-cover"
             alt=""
           />
 
@@ -131,7 +131,7 @@ const Slider = () => {
         <div className="relative min-w-max h-[calc(100vh-96px)] duration-500 text-black flex justify-start items-center">
           <img
             src="https://smm-ibis.by/wp-content/uploads/2023/08/Баннер-1-1.webp"
-            className="w-screen relative h-full"
+            className="w-screen relative h-full object-cover"
             alt=""
           />
 
