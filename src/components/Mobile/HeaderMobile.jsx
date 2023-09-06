@@ -200,7 +200,7 @@ const HeaderMobile = () => {
             )}
 
             <li>
-              <a href="https://smm-ibis.by/in-step-with-the-times/">
+              <a href="#newsMobile">
                 Новости
               </a>
             </li>

@@ -33,7 +33,7 @@ const NewsMobile = () => {
     // ref?.current?.scrollLeft += 80;
 
   return (
-    <div className="flex flex-col gap-y-6 w-full py-6">
+    <div id="newsMobile" className="flex flex-col gap-y-6 w-full py-6">
       <div className="flex w-full justify-between items-center px-4">
         <h1 className="leading-6 text-lg">Статьи</h1>
       </div>
@@ -82,24 +82,6 @@ const NewsMobile = () => {
           </div>
         </div>
       </div>
-
-      {newsLength === 1 ? (
-        ""
-      ) : (
-        <div className="flex select-none justify-center items-center gap-x-2">
-          {newsLisst.map((_, idx) => (
-            <div
-              key={idx}
-              onClick={() => handleDots(idx)}
-              className={`cursor-pointer select-none transition-all duration-500 h-2 rounded-[7px] ${
-                dots === idx ? "bg-black w-4" : "bg-[#A7A7A7] w-2"
-              }`}
-            >
-              &nbsp;
-            </div>
-          ))}
-        </div>
-      )}
     </div>
   );
 };
