@@ -134,6 +134,10 @@ const Footer = () => {
             <p className="text-sm text-[#BBBBBB]">
               © Все права защищены Ибис Маркетинг 2023
             </p>
+
+            <p className="text-sm text-[#BBBBBB]">
+              Беларусь, Могилёв, Ленинская ул. 11 офис 2
+            </p>
           </div>
         </div>
       </div>
