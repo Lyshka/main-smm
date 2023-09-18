@@ -130,7 +130,7 @@ const Slider = () => {
         </div>
         <div className="relative min-w-max h-[calc(100vh-96px)] duration-500 text-black flex justify-start items-center">
           <img
-            src="https://smm-ibis.by/wp-content/uploads/2023/08/Баннер-1-1.webp"
+            src="https://smm-ibis.by/wp-content/uploads/2023/09/e60eb00e-534b-4cb5-a29b-42b8d2ef915d.webp"
             className="w-screen relative h-full object-cover"
             alt=""
           />
