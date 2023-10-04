@@ -61,8 +61,8 @@ const News = () => {
                 style={{ translate: `${translate}px` }}
               >
                 <div className="w-full flex justify-between items-center">
-                  <h1 className="leading-6 text-xl">{el.title.rendered}</h1>
-                  <span className="text-[#999999] text-right text-xs">
+                  <h1 className="leading-6 text-xl max-w-[420px] h-12 flex justify-center items-start">{el.title.rendered}</h1>
+                  <span className="text-[#999999] text-right text-xs h-12 flex justify-center items-start">
                     {DateTime.fromISO(el.date)
                       .setLocale("ru")
                       .toFormat("d MMMM y")}

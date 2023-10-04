@@ -53,10 +53,10 @@ const NewsMobile = () => {
                 style={{ translate: `${translate}px` }}
               >
                 <div className="w-full flex justify-center items-start">
-                  <h1 className="leading-4 w-[189px] text-xs">
+                  <h1 className="leading-4 w-[189px] text-xs h-16 flex justify-center items-start">
                     {el.title.rendered}
                   </h1>
-                  <span className="text-[#999999] text-right leading-4 text-[10px]">
+                  <span className="text-[#999999] text-right leading-4 text-[10px] h-16 flex justify-center items-start ">
                     {DateTime.fromISO(el.date)
                       .setLocale("ru")
                       .toFormat("d MMMM y")}
