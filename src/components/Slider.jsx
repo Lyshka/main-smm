@@ -80,7 +80,7 @@ const Slider = () => {
                 onClick={handleModal}
                 className="px-6 py-4 text-white bg-[#FF3A2D] rounded-[100px] text-lg leading-6 uppercase"
               >
-                Оставить заявку
+                Рассчитать стоимость
               </button>
             </div>
           </div>
@@ -155,7 +155,7 @@ const Slider = () => {
                 onClick={handleModal}
                 className="px-6 py-4 text-white bg-[#FF3A2D] rounded-[100px] text-lg leading-6 uppercase"
               >
-                Оставить заявку
+                Рассчитать стоимость
               </button>
             </div>
           </div>
