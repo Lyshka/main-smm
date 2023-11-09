@@ -64,7 +64,7 @@ const ModalSliderMobile = ({ modal, handleModal }) => {
               >
                 <InputMobile name="name" text={"Имя"} />
                 <InputMobile name="tel" text={"Телефон"} type={"tel"} />
-                <InputMobile name="email" text={"Email"} type={"email"} />
+                {/* <InputMobile name="email" text={"Email"} type={"email"} /> */}
                 <button
                   type="submit"
                   className="bg-[#FF3A2D] rounded-[100px] shadowMailButton text-white leading-6 text-lg px-6 py-4 w-full text-center uppercase"
